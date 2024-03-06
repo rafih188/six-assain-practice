@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro</title>
+  <!-- daisi ui and tailwind link == -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- remix icon link  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- cusotm style link == -->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="mx-auto container">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a><i class="ri-home-4-line "></i>Home</a></li>
+              <li><a><i class="ri-pencil-line"></i>Edit</a></li>
+              <li><a><i class="ri-contacts-line"></i>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-black text-3xl text-[#12132D] ">ReTro</a>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden  lg:flex gap-3 list-none m-2 ">
+            <!-- tooltip icon here == -->
+            <li class=" p-3 mulish-font text-xl font-medium ">
+
+              <div class="tooltip" data-tip="Home">
+                <button class="btn rounded-full"><i class="ri-home-4-line "></i></button>
+              </div>
+            </li>
+            <li class=" p-3 mulish-font text-xl font-medium ">
+
+              <div class="tooltip" data-tip="Edit">
+                <button class="btn rounded-full"><i class="ri-pencil-line"></i></button>
+              </div>
+            </li>
+            <li class=" p-3 mulish-font text-xl font-medium ">
+
+              <div class="tooltip" data-tip="Contact">
+                <button class="btn rounded-full"><i class="ri-contacts-line"></i></button>
+              </div>
+            </li>
+            <li class=" p-3 mulish-font text-xl font-medium ">
+
+              <div class="tooltip" data-tip="More">
+                <button class="btn rounded-full"><i class="ri-flag-line"></i></button>
+              </div>
+            </li>
+
+          </div>
+          <a class="btn rounded-[50px] px-6 text-white bg-[#797DFC] text-xl font-semibold">Sign In</a>
+        </div>
+      </div>
+    </nav>
+    <section class="my-8">
+      <div class="hero min-h-screen bg-[#12132D] rounded-3xl" style="background-image: url(/image/bgbanner.png);">
+        <div class="hero-content text-center text-neutral-content">
+          <!-- left banner == -->
+          <div class="flex flex-col lg:flex-row gap-3 mulish-font text-xl font-medium w-full h-full">
+            <section class="flex-1">
+              <div class="max-w-[640px] flex flex-col gap-5 items-center">
+                <h1 class="mulish-font font-black text-6xl">Welcome to the <br> <span class="retro">ReTro</span> Forum
+                </h1>
+                <p class="text-[#FFFFFFCC] font-medium text-xl mulish-font">Share your favorite opinion and win and wp
+                  forum coffee mug!</p>
+                <label
+                  class="input rounded-full input-bordered flex items-center gap-3 mulish-font text-xl font-medium">
+                  <input id="search-field" type="text" class="grow" placeholder="Search here anything" />
+                  <button onclick="handleSearch()" class="btn rounded-full badge-info text-[#FFFFFF] bg-[#797DFC] font-bold">Search</button>
+                </label>
+              </div>
+            </section>
+
+            <!-- right section == -->
+            <section
+              class="flex-1 border-4 rounded-3xl items-center justify-center bg-[#fff] max-w-[300px] sm:mx-auto ">
+              <div class=" sm:p-8 p-10 text-[#12132DCC]">
+                <span class="flex justify-between p-3 mulish-font text-xl font-medium">
+                  <p>Registered Users</p>
+                  <p>44</p>
+                </span>
+                <span class="flex justify-between p-3 mulish-font text-xl font-medium">
+                  <p>Forum</p>
+                  <p>04</p>
+                </span>
+                <span class="flex justify-between p-3 mulish-font text-xl font-medium">
+                  <p>Topics</p>
+                  <p>03</p>
+                </span>
+                <span class="flex justify-between p-3 mulish-font text-xl font-medium">
+                  <p>Replies</p>
+                  <p>20</p>
+                </span>
+
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="mx-auto container">
+    <!-- let's diccuss section ==-->
+    <section class="mb-6">
+      <h1 class="text-center text-[#12132D] font-black text-4xl mulish-font">Let’s Discuss</h1>
+      <p class="p-5 interfont font-normal text-xl text-center text-[#12132D99]">Yes, you can run unit tests and view the
+        results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+    </section>
+    <section class="flex lg:flex-row gap-10 md:flex-col  flex-col ">
+      <!-- post section == -->
+      <div class="w-[65%] mx-auto">
+        <article id="post-container" class=" rounded-3xl">
+          <!-- first post ============
+            ========= -->
+
+          <!-- first post end ======
+            ========= -->
+        </article>
+      </div>
+      <!-- title view section == -->
+      <div  class="bg-[#12132D0D] lg:w-[28%] w-full my-4 mx-auto rounded-3xl">
+        <div id="mark-read-container" class="border-2 rounded-3xl  min-h-[50%]">
+          <div  class="flex mulish-font justify-between p-5">
+            <h1 class="text-[#12132D] font-bold  mulish-font text-xl">Title </h1>
+            <div class="flex gap-3">
+              <img src="image/Frame.svg" alt="w">
+              <p class="text-xl font-normal text-[#12132D]" > Mark as read </p>
+            </div>
+           
+          </div>
+           <!-- dynamic information -->
+          
+
+        </div>
+       
+       
+       
+      </div>
+      
+
+    </section>
+    <!-- join our forum section == -->
+    <section class="container">
+      <div class="h-2/3 w-full bg-[#12132D]  rounded-3xl flex justify-between">
+        <div class="p-8 flex flex-col items-start">
+          <h1 class="text-[#fff] font-black text-5xl mulish-font text-center p-6">Join Our Forum</h1>
+          <p class="text-[#fff] font-normal mulish-font text-xl p-6 text-start">Share your favorite opinion and win and
+            wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+          <button
+            class="btn m-6 bg-[#797DFC] text-[#FFFFFF] font-bold text-xl mulish-font items-center rounded-full border-none ">Register
+            Now</button>
+        </div>
+        <div class="w-[30%]">
+          <img src="image/joinforum.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- lettest post section === -->
+    <section class=" w-full my-10">
+      <h1 class=" text-center text-[#12132D] font-black text-4xl mulish-font">Latest Posts</h1>
+      <p class=" p-8 interfont font-normal text-xl text-center text-[#12132D99] ">Yes, you can run unit tests and view the results directly within the app. <br>   The integrated testing features allow for a streamlined .</p>
+      <!-- latest card here ========== -->
+      <div id="latest-container" class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-around gap-4">
+        <!-- first card ======= -->
+       
+
+        
+      </div>
+    </section>
+  </main>
+  <footer class="mx-auto container">
+     <h1 class="text-center text-[#12132D] font-black text-3xl mulish-font p-5">ReTro</h1>
+     <p class="px-10 interfont font-normal text-xl text-center text-[#12132D99]"> It contributes to a user-friendly experience and helps build trust by providing transparency and necessary details about the forum's operations and policies.</p>
+     <div class="mt-10 pb-4 border-b-2 text-[#12132D] text-3xl items-center justify-center flex gap-5 ">
+      <i class="ri-twitter-fill hover:text-[#3439c499]"></i>
+      <i class="ri-facebook-line hover:text-[#3439c499]"></i>
+      <i class="ri-instagram-line hover:text-[#3439c499]"></i>
+      <i class="ri-github-fill hover:text-[#3439c499]"></i>
+     </div>
+     <p class="text-center mulish-font font-light text-sm p-12">2017, All Rights Reserved.</p>
+  </footer>
+  <!-- custom js link here == -->
+  <script src="js/reuse.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

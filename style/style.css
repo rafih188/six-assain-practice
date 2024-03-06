@@ -1,0 +1,24 @@
+/* mulish font link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.mulish-font{
+    font-family: "Mulish", sans-serif;
+}
+.interfont{
+    font-family: "Inter", sans-serif;
+}
+.icon-full{
+    border-radius: 100%;
+}
+.retro{
+    background: linear-gradient(90deg, #797DFC 0.63%, rgba(121, 125, 252, 0.416) 41%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+    
+}
